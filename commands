@@ -1,0 +1,28 @@
+#after you open the git terminal
+#start with creating empty repository
+git init
+#use USERNAME and USEREMAIL only when when you are setting up github for the first time
+#create username and useremail
+git config --global user.name "surya"
+git config --global user.email "tejachalla94@gmail.com"
+#to check the status in git
+git status
+#to see log information
+git log
+#create an empty directory
+mkdir iapp
+cd iapp/
+#to track files and commit in git
+git commit -a -m "commiting the iapp on to github"
+#to reset previous git version; 12457 is also called SHA / HEAD
+git reset --hard 12457
+#to clone the files from one repo to another
+git clone iapp iapp1
+#list branches
+git branch iapp1 -v
+#delete slave branches
+git branch iapp1 -d
+#push to central repo
+git push iapp1
+#pull from central repo
+git pull iapp1
